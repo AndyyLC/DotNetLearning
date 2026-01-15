@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "KU6hKTCWKMQ=",
+  "success": true,
+  "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtWebApp\\AsciiArtWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andy1\\.nuget\\packages\\barcodelib\\2.2.2\\barcodelib.2.2.2.nupkg.sha512",
+    "C:\\Users\\andy1\\.nuget\\packages\\figgle\\0.5.1\\figgle.0.5.1.nupkg.sha512",
+    "C:\\Users\\andy1\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\andy1\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\andy1\\.nuget\\packages\\system.drawing.common\\4.5.1\\system.drawing.common.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
