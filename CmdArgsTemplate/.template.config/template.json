@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "Andy Lau",
+    "classifications": ["Console"],
+    "name": "Console with arguements",
+    "identity": "CmdArgsTemplate",
+    "shortName": "consoleargs",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "CmdArgsTemplate",
+    "preferDefaultName": true
+
+}

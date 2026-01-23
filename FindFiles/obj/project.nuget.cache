@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1ERWrNDG/VQ=",
+  "success": true,
+  "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\FindFiles\\FindFiles.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andy1\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512"
+  ],
+  "logs": []
+}
