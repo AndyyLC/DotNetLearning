@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Gp0tA1Rv5o4=",
+  "success": true,
+  "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\FindText\\FindText.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andy1\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512"
+  ],
+  "logs": []
+}
