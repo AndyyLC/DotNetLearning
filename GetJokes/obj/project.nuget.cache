@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VuNPmKXUxeE=",
+  "success": true,
+  "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\GetJokes\\GetJokes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andy1\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512"
+  ],
+  "logs": []
+}
