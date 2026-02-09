@@ -5,6 +5,8 @@ using CommandLine.Text;
 using System.Text;
 using System.Text.Json;
 
+//Program that reads and processes Json files to show only certain output
+
 var results = Parser.Default.ParseArguments<Options>(args).WithParsed<Options>(
     options => {
         var inFile = new FileInfo(options.InputFile!);
@@ -30,7 +32,7 @@ var results = Parser.Default.ParseArguments<Options>(args).WithParsed<Options>(
 
 results.WithNotParsed(_ => WriteLine(HelpText.RenderUsageText(results)));
 
-static void FindWithJsonDom(Stream inStream, Stream outStream, string category)
+static void FindWithJsonDom(Stream inStream, Stream outStream, string category) //Parses Json using the Document Object Model Method (DOM)
 {
     var writerOptions = new JsonWriterOptions { Indented = true }; //options pattern, turning it off puts all text on one line
     
