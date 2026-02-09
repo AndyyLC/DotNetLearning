@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WCZ9UdE1Uko=",
+  "success": true,
+  "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\XkcdAPI_HTTP_REQ\\XkcdSearch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andy1\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512"
+  ],
+  "logs": []
+}
