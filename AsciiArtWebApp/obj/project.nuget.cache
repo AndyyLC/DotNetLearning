@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KU6hKTCWKMQ=",
+  "dgSpecHash": "ycQRyPSFLgo=",
   "success": true,
-  "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtWebApp\\AsciiArtWebApp.csproj",
+  "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\AsciiArtWebApp\\AsciiArtWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andy1\\.nuget\\packages\\barcodelib\\2.2.2\\barcodelib.2.2.2.nupkg.sha512",
     "C:\\Users\\andy1\\.nuget\\packages\\figgle\\0.5.1\\figgle.0.5.1.nupkg.sha512",

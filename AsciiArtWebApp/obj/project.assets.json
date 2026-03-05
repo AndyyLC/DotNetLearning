@@ -190,11 +190,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtWebApp\\AsciiArtWebApp.csproj",
+      "projectUniqueName": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\AsciiArtWebApp\\AsciiArtWebApp.csproj",
       "projectName": "AsciiArtWebApp",
-      "projectPath": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtWebApp\\AsciiArtWebApp.csproj",
+      "projectPath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\AsciiArtWebApp\\AsciiArtWebApp.csproj",
       "packagesPath": "C:\\Users\\andy1\\.nuget\\packages\\",
-      "outputPath": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtWebApp\\obj\\",
+      "outputPath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\AsciiArtWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andy1\\AppData\\Roaming\\NuGet\\NuGet.Config",
