@@ -18,13 +18,13 @@ public class CatalogController : ControllerBase
     [HttpGet]
     public IAsyncEnumerable<Book> GetBooks(string? titleFilter = null)
     {
-        IQueryable<Book> query = _dbContext.Books.Include(b => b.Ratings).AsNoTracking();
+        IQueryable<Book> query = _dbContext.Books.Include(b => b.Ratings).AsNoTracking(); //can't use var as query is composed in parts
         //AsNoTracking() means track no changes
         if (titleFilter != null)
         {
             query = query.Where(b => b.Title.ToLower().Contains(titleFilter.ToLower()));
         }
 
-        return query.AsAsyncEnumerable();
+        return query.AsAsyncEnumerable(); //ASP.NET core responds with JSON by default
     }
 }
