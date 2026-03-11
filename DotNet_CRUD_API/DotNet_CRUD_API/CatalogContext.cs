@@ -5,7 +5,7 @@ namespace DotNet_CRUD_API;
 public class CatalogContext: DbContext //inherit from DbContext class
 {
 
-    public const string ConnectionString = "DataSource=manningsbooks; mode=memory cache=shared";
+    public const string ConnectionString = "DataSource=manningsbooks; mode=memory; cache=shared";
     public DbSet<Book> Books { get; set;} //adds books to entity model
 
     protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite(ConnectionString);

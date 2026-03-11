@@ -27,4 +27,10 @@ public class CatalogController : ControllerBase
 
         return query.AsAsyncEnumerable(); //ASP.NET core responds with JSON by default
     }
+
+    [HttpGet("{id}")]
+    public Task<Book?> GetBook(int id)
+    {
+        return _dbContext.Books.FirstOrDefaultAsync(b => b.Id == id); //returns task without await
+    }
 }
