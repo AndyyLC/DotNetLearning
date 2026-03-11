@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AsciiArtSvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fdd9faf7fef584a9e7e48f7002ec343febe8761")]
 [assembly: System.Reflection.AssemblyProductAttribute("AsciiArtSvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AsciiArtSvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -58,3 +58,8 @@ Z:\VSCODE\DotNet_BookLearning\DotNetLearning\DotNet_CRUD_API\DotNet_CRUD_API\obj
 Z:\VSCODE\DotNet_BookLearning\DotNetLearning\DotNet_CRUD_API\DotNet_CRUD_API\obj\Debug\net9.0\DotNet_CRUD_API.pdb
 Z:\VSCODE\DotNet_BookLearning\DotNetLearning\DotNet_CRUD_API\DotNet_CRUD_API\obj\Debug\net9.0\DotNet_CRUD_API.genruntimeconfig.cache
 Z:\VSCODE\DotNet_BookLearning\DotNetLearning\DotNet_CRUD_API\DotNet_CRUD_API\obj\Debug\net9.0\ref\DotNet_CRUD_API.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\DotNet_CRUD_API\DotNet_CRUD_API\bin\Debug\net9.0\Microsoft.OpenApi.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\DotNet_CRUD_API\DotNet_CRUD_API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\DotNet_CRUD_API\DotNet_CRUD_API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\DotNet_CRUD_API\DotNet_CRUD_API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\DotNet_CRUD_API\DotNet_CRUD_API\obj\Debug\net9.0\DotNet_CRUD_API.MvcApplicationPartsAssemblyInfo.cs

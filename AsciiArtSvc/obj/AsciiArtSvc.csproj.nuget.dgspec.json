@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtSvc\\AsciiArtSvc.csproj": {}
+    "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\AsciiArtSvc\\AsciiArtSvc.csproj": {}
   },
   "projects": {
-    "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtSvc\\AsciiArtSvc.csproj": {
+    "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\AsciiArtSvc\\AsciiArtSvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtSvc\\AsciiArtSvc.csproj",
+        "projectUniqueName": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\AsciiArtSvc\\AsciiArtSvc.csproj",
         "projectName": "AsciiArtSvc",
-        "projectPath": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtSvc\\AsciiArtSvc.csproj",
+        "projectPath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\AsciiArtSvc\\AsciiArtSvc.csproj",
         "packagesPath": "C:\\Users\\andy1\\.nuget\\packages\\",
-        "outputPath": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\AsciiArtSvc\\obj\\",
+        "outputPath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\AsciiArtSvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andy1\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\HelloDotNet\\HelloDotNet.csproj": {}
+    "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\HelloDotNet\\HelloDotNet.csproj": {}
   },
   "projects": {
-    "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\HelloDotNet\\HelloDotNet.csproj": {
+    "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\HelloDotNet\\HelloDotNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\HelloDotNet\\HelloDotNet.csproj",
+        "projectUniqueName": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\HelloDotNet\\HelloDotNet.csproj",
         "projectName": "HelloDotNet",
-        "projectPath": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\HelloDotNet\\HelloDotNet.csproj",
+        "projectPath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\HelloDotNet\\HelloDotNet.csproj",
         "packagesPath": "C:\\Users\\andy1\\.nuget\\packages\\",
-        "outputPath": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\HelloDotNet\\obj\\",
+        "outputPath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\HelloDotNet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andy1\\AppData\\Roaming\\NuGet\\NuGet.Config",

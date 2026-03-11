@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "56HSjzFSoxM=",
+  "dgSpecHash": "r5Zupu8I3Sw=",
   "success": true,
-  "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\HelloWorld\\HelloDotNet\\HelloDotNet.csproj",
+  "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\HelloDotNet\\HelloDotNet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andy1\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512",
     "C:\\Users\\andy1\\.nuget\\packages\\figgle\\0.4.0\\figgle.0.4.0.nupkg.sha512",
