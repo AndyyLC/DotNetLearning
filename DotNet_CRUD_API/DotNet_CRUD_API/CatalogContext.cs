@@ -6,7 +6,8 @@ public class CatalogContext: DbContext //inherit from DbContext class
 {
 
     public const string ConnectionString = "DataSource=manningsbooks; mode=memory; cache=shared";
-    public DbSet<Book> Books { get; set;} //adds books to entity model
+    public DbSet<Book> Books { get; set; } //adds books to entity model
+    public DbSet<Rating> Ratings { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite(ConnectionString);
     //use sqlite
@@ -25,8 +26,8 @@ public class CatalogContext: DbContext //inherit from DbContext class
         dbContext.Add(new Book("How make a mod"));
         dbContext.Add(new Book("API Design Patterns"));
         var efBook = new Book("EF Core in Action 2nd Edition");
-        efBook.Ratings.Add(new Rating { Comment = "Amazing"});
-        efBook.Ratings.Add(new Rating { Stars = 4 });
+        efBook.Ratings.Add(new Rating(5, "Amazing"));
+        efBook.Ratings.Add(new Rating(4));
         dbContext.Add(efBook);
         dbContext.SaveChanges();
     }

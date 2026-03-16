@@ -5,4 +5,10 @@ public class Rating
     public int Id { get; set; }
     public int Stars { get; set; } = 5;
     public string? Comment { get; set; }
+
+    public Rating(int stars, string? comment = null)
+    {
+        Stars = stars;
+        Comment = comment;
+    }
 }
