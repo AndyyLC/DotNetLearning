@@ -12,7 +12,7 @@ public class CatalogController : ControllerBase
 
     public record BookCreateCommand(string Title, string? Description) { }
 
-    public record BookUpdateCommand(string Title, string? Description) { }
+    public record BookUpdateCommand(string? Title, string? Description) { }
 
     public CatalogController(CatalogContext dbContext) //dependency injection provides this object
     {
