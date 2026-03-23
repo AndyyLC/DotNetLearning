@@ -1,0 +1,12 @@
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\bin\Debug\net9.0\SudokuSolver.deps.json
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\bin\Debug\net9.0\SudokuSolver.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\bin\Debug\net9.0\SudokuSolver.pdb
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\obj\Debug\net9.0\SudokuSolver.GeneratedMSBuildEditorConfig.editorconfig
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\obj\Debug\net9.0\SudokuSolver.AssemblyInfoInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\obj\Debug\net9.0\SudokuSolver.AssemblyInfo.cs
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\obj\Debug\net9.0\SudokuSolver.csproj.CoreCompileInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\obj\Debug\net9.0\SudokuSolver.sourcelink.json
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\obj\Debug\net9.0\SudokuSolver.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\obj\Debug\net9.0\refint\SudokuSolver.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\obj\Debug\net9.0\SudokuSolver.pdb
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnit SudokuSolver Library\SudokuSolver\obj\Debug\net9.0\ref\SudokuSolver.dll
