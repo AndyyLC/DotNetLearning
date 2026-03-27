@@ -2,33 +2,15 @@
 
 public class Solver
 {
-    private readonly int[,] _board;
+    private readonly IBoard _board;
 
-    public Solver(int[,] board)
+    public Solver(IBoard board)
     {
         _board = board;
     }
 
     public bool IsValid()
     {
-        int rows = _board.GetLength(0);
-        int cols = _board.GetLength(1);
-
-        if (rows != cols)
-        {
-            return false;
-        }
-
-        if (rows < 4)
-        {
-            return false;
-        }
-
-        int sqrt = (int)Math.Sqrt(rows);
-        if ((sqrt * sqrt) != rows)
-        {
-            return false;
-        }
         return true;
     }
 }
