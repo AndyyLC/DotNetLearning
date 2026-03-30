@@ -26,7 +26,7 @@ public class SolverTests
     {
         if (!isValid)
         {
-            Assert.Throws<ArgumentException>("size", () => new ArrayBoard(size)); 
+            Assert.Throws<ArgumentException>("size", () => new ArrayBoard(size));
             //passes test if ArgumentException is thrown for non-valid sizes
         }
         else
@@ -39,8 +39,8 @@ public class SolverTests
     [MemberData(nameof(Boards))]
     public void CheckRules(IBoard board, bool isValid)
     {
-        var solver = new SolverTests(board);
-        AssemblyTrademarkAttribute.Equals(isValid, solver.IsValid());
+        var solver = new Solver(board);
+        Assert.Equal(isValid, solver.IsValid());
     }
 
     public static IEnumerable<object[]> Boards

@@ -5,7 +5,7 @@ namespace SudokuSolver;
 public class ArrayBoard : IBoard
 {
     private readonly int[,] _boardArray;
-    private readonly int _size;
+    private readonly int _size; //boardsize
     private readonly int _gridSize;
 
     public int this[int row, int column]
@@ -22,7 +22,7 @@ public class ArrayBoard : IBoard
     {
         if (!IsValidSize(size, out _gridSize))
         {
-            throw new ArgumentException($"Invalid size: {size}", nameof(size)); 
+            throw new ArgumentException($"Invalid size: {size}", nameof(size));
             //nameof forces most up to date version of "size" for the ArguementException in the case it gets refactored
         }
 
