@@ -12,12 +12,18 @@ public class SolverTests
         Assert.True(solver.IsValid());
     }
 
-    // [Fact]
-    // public void NonSquareBoard()
-    // {
-    //     var solver = new Solver(new ArrayBoard(3));
-    //     Assert.False(solver.IsValid());
-    // }
+    [Fact]
+    public void CheckSolvableSquareBoard()
+    {
+        IBoard board = new ArrayBoard(4);
+        board[1, 0] = 4;
+        board[1, 2] = 1;
+        board[1, 3] = 3;
+        board[2, 1] = 1;
+        board[2, 3] = 2;
+        var solver = new Solver(board);
+        Assert.True(solver.IsValid());
+    }
 
     [Theory]
     [InlineData(8, false)]
@@ -37,10 +43,10 @@ public class SolverTests
 
     [Theory]
     [MemberData(nameof(Boards))]
-    public void CheckRules(IBoard board, bool isValid)
+    public void CheckRules(string label, IBoard board, bool isValid)
     {
         var solver = new Solver(board);
-        Assert.Equal(isValid, solver.IsValid());
+        Assert.True(isValid == solver.IsValid(), $"Failed on board: {label}");
     }
 
     public static IEnumerable<object[]> Boards
@@ -50,19 +56,30 @@ public class SolverTests
             IBoard board = new ArrayBoard(4);
             board[1, 0] = 1;
             board[3, 0] = 1;
-            yield return new object[] { board, false };
+            yield return new object[] { "Board 1", board, false };
             board = new ArrayBoard(4);
             board[1, 0] = 1;
             board[1, 2] = 1;
-            yield return new object[] { board, false };
+            yield return new object[] { "Board 2", board, false };
             board = new ArrayBoard(4);
             board[1, 2] = 1;
             board[0, 3] = 1;
-            yield return new object[] { board, false };
+            yield return new object[] { "Board 3", board, false };
             board = new ArrayBoard(4);
             board[1, 1] = 1;
             board[2, 3] = 1;
-            yield return new object[] { board, true };
+            yield return new object[] { "Board 4", board, true };
+            board = new ArrayBoard(4);
+            board[1, 0] = 1;
+            board[0, 3] = 1;
+            yield return new object[] { "Board 5", board, true };
+            board = new ArrayBoard(4);
+            board[1, 0] = 4;
+            board[1, 2] = 1;
+            board[1, 3] = 3;
+            board[2, 1] = 1;
+            board[2, 3] = 2;
+            yield return new object[] { "Board 6", board, true };
         }
     }
 

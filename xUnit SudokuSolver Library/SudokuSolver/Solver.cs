@@ -6,6 +6,7 @@ namespace SudokuSolver;
 public class Solver
 {
     private readonly IBoard _board;
+    private List<(int zeroRow, int zeroCol)> zeroSpots = new();
 
     public Solver(IBoard board)
     {
@@ -75,5 +76,65 @@ public class Solver
             }
         }
         return true;
+    }
+    public bool IsSolvable()
+    {
+        zeroSpots.Clear();
+        if (_board == null || !IsValid())
+        {
+            return false;
+        }
+        else
+        {
+            FindZeros(zeroSpots);
+            if (zeroSpots.Count != 0)
+            {
+                return Solve(0);
+            }
+        }
+        return false;
+    }
+
+    public bool Solve(int index)
+    {
+        if (index == zeroSpots.Count)
+            return true;
+        var (row, col) = zeroSpots[index];
+        if (_board[row, col] == 0)
+        {
+            for (int i = 1; i <= _board.Size; i++)
+            {
+                _board[row, col] = i;
+                if (!IsValid())
+                {
+                    _board[row, col] = 0;
+                    continue;
+                }
+                if (Solve(index + 1))
+                {
+                    return true;
+                }
+                else
+                {
+                    _board[row, col] = 0;
+                }
+            }
+            return false;
+        }
+        return true;
+    }
+
+    public void FindZeros(List<(int zeroRow, int zeroCol)> zeroSpots)
+    {
+        for (int row = 0; row < _board.Size; row++)
+        {
+            for (int col = 0; col < _board.Size; col++)
+            {
+                if (_board[row, col] == 0)
+                {
+                    zeroSpots.Add((row, col));
+                }
+            }
+        }
     }
 }
