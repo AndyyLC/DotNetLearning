@@ -1,0 +1,12 @@
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\bin\Debug\net9.0\xUnitStreamLib.deps.json
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\bin\Debug\net9.0\xUnitStreamLib.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\bin\Debug\net9.0\xUnitStreamLib.pdb
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\obj\Debug\net9.0\xUnitStreamLib.GeneratedMSBuildEditorConfig.editorconfig
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\obj\Debug\net9.0\xUnitStreamLib.AssemblyInfoInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\obj\Debug\net9.0\xUnitStreamLib.AssemblyInfo.cs
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\obj\Debug\net9.0\xUnitStreamLib.csproj.CoreCompileInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\obj\Debug\net9.0\xUnitStreamLib.sourcelink.json
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\obj\Debug\net9.0\xUnitStreamLib.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\obj\Debug\net9.0\refint\xUnitStreamLib.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\obj\Debug\net9.0\xUnitStreamLib.pdb
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\xUnitStream\xUnitStreamLib\obj\Debug\net9.0\ref\xUnitStreamLib.dll
