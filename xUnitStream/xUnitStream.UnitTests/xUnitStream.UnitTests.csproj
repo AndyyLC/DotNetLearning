@@ -26,4 +26,8 @@
     <None Include="*.txt" CopyToOutputDirectory="PreserveNewest" />
     <None Update="dontcopy.txt" CopyToOutputDirectory="Never" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="dontcopy.txt" />
+  </ItemGroup>
 </Project>

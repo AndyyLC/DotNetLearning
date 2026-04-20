@@ -33,4 +33,17 @@ public class UnitTest1
         var line = Utils.FindFirstMatchingLine(stream, "ou");
         Assert.Equal("You", line);
     }
+
+    [Fact]
+    public void EmbeddedResource()
+    {
+        var type = this.GetType(); //Type of unit test class
+        var asm = type.Assembly; //unit test assembly
+        using var stream = asm.GetManifestResourceStream( //gets resource from assembly
+            type.Namespace + ".dontcopy.txt"
+        ); //resource identified by namespace and filename
+
+        var line = Utils.FindFirstMatchingLine(stream!, "f");
+        Assert.Equal("def", line);
+    }
 }
