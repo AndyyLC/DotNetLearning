@@ -117,7 +117,7 @@ public class Solver
                 else
                 {
                     _board[row, col] = 0;
-                }
+                }   
             }
             return false;
         }
