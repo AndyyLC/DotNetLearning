@@ -40,6 +40,19 @@
           }
         }
       },
+      "GenericParsing/1.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/GenericParsing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/GenericParsing.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.14.1": {
         "type": "package",
         "compile": {
@@ -455,6 +468,9 @@
       "CustomerBatchImporter/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "GenericParsing": "1.6.0"
+        },
         "compile": {
           "bin/placeholder/CustomerBatchImporter.dll": {}
         },
@@ -576,6 +592,21 @@
         "lib/net462/FakeItEasy.xml",
         "lib/net8.0/FakeItEasy.dll",
         "lib/net8.0/FakeItEasy.xml"
+      ]
+    },
+    "GenericParsing/1.6.0": {
+      "sha512": "aRqgnJj2UDlYSNXQkRAiBDZEn526tfyu6hGGNxS3Sa9dC5ssDTWc5rtoV5VUF2zVkl0011pcPwKwi2ly1g4LQw==",
+      "type": "package",
+      "path": "genericparsing/1.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "genericparsing.1.6.0.nupkg.sha512",
+        "genericparsing.nuspec",
+        "lib/net8.0/GenericParsing.dll",
+        "lib/net8.0/GenericParsing.xml",
+        "lib/netstandard2.0/GenericParsing.dll",
+        "lib/netstandard2.0/GenericParsing.xml"
       ]
     },
     "Microsoft.CodeCoverage/17.14.1": {

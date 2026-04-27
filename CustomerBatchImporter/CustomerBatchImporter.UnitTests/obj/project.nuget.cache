@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "7vfED/YaXz8=",
+  "dgSpecHash": "QhPyIG8DWbQ=",
   "success": true,
   "projectFilePath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\CustomerBatchImporter\\CustomerBatchImporter.UnitTests\\CustomerBatchImporter.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andy1\\.nuget\\packages\\castle.core\\5.2.1\\castle.core.5.2.1.nupkg.sha512",
     "C:\\Users\\andy1\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\andy1\\.nuget\\packages\\fakeiteasy\\9.0.1\\fakeiteasy.9.0.1.nupkg.sha512",
+    "C:\\Users\\andy1\\.nuget\\packages\\genericparsing\\1.6.0\\genericparsing.1.6.0.nupkg.sha512",
     "C:\\Users\\andy1\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
     "C:\\Users\\andy1\\.nuget\\packages\\microsoft.net.test.sdk\\17.14.1\\microsoft.net.test.sdk.17.14.1.nupkg.sha512",
     "C:\\Users\\andy1\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.14.1\\microsoft.testplatform.objectmodel.17.14.1.nupkg.sha512",
