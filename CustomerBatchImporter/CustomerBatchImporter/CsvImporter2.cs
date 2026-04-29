@@ -6,16 +6,17 @@ public class CsvImporter2
     private readonly ICustomerRepository _customerRepo;
 
     public CsvImporter2(ICustomerRepository customerRepo) => _customerRepo = customerRepo;
-     //gets repository into constructor
+    //gets repository into constructor
+
+    private static readonly ICsvParser<NewCustomerDto> csvParser = new CsvParser();
 
     public async Task ReadAsync(Stream stream)
     {
         var reader = new StreamReader(stream); //streamreader to read lines
         string? line;
-        private static readonly ICsvParser<NewCustomerDto> csvParser = new CsvParser();
         while ((line = await reader.ReadLineAsync()) != null) //reads while lines are not null
         {
-            var customer = ReadCsvLine(line); //null if line is invalid
+            var customer = csvParser.ParseLine(line); //null if line is invalid
             if (customer == null) //if line is invalid then skip rest of while loop
             {
                 continue;
@@ -27,7 +28,9 @@ public class CsvImporter2
             }
             else
             {
-                await _customerRepo.UpdateAysnc(new UpdateCustomerDto(existing.Id, customer.Name, customer.License));
+                await _customerRepo.UpdateAysnc(
+                    new UpdateCustomerDto(existing.Id, customer.Name, customer.License)
+                );
             }
         }
     }
