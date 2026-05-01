@@ -5,7 +5,7 @@ public class CsvImporter
     private readonly ICustomerRepository _customerRepo;
 
     public CsvImporter(ICustomerRepository customerRepo) => _customerRepo = customerRepo;
-     //gets repository into constructor
+    //gets repository into constructor
 
     public async Task ReadAsync(Stream stream)
     {
@@ -35,4 +35,5 @@ public class CsvImporter
         var el = line.Split(',');
         return el.Length != 3 ? null : new NewCustomerDto(el[0], el[1], el[2]);
     }
+ 
 }

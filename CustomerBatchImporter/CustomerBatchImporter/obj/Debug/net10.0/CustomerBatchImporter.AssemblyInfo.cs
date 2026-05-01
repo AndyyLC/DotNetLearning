@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CustomerBatchImporter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef2822690092825f8f9a44734db876409395e142")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b42e99defb77b05eb617273b428dedfb51ff5420")]
 [assembly: System.Reflection.AssemblyProductAttribute("CustomerBatchImporter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CustomerBatchImporter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
