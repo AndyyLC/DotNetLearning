@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using CustomerBatchImporter;
 using FakeItEasy;
+using Microsoft.VisualBasic;
 using Xunit;
 
 namespace CustomerBatchImporter.UnitTests;
@@ -71,12 +72,26 @@ public class CsvImporterTests
     [Fact]
     public async Task InvalidLine()
     {
-        var stream = GetStreamFromString("Line that should fail due to no commas"); 
+        var stream = GetStreamFromString("Line that should fail due to no commas");
         await _csvImporter.ReadAsync(stream);
 
         var calls = Fake.GetCalls(_fakeCustomerRepo); //get all calls to fake
-        Assert.Empty(calls);
+        Assert.Empty(calls); //Assert that there were no calls
     }
 
-    
+    [Fact]
+    public async Task ThreeLineOneInvalid()
+    {
+        //Arrange
+        A.CallTo(() => _fakeCustomerRepo.GetByEmailAsync(A<string>.Ignored)).Returns(default(Customer));
+        //A<string>.Ignored makes it not care about email
+
+        //Act
+        var stream = GetStreamFromString("a@b.com,customer1,None\ninvalidline\nc@d.com,customer2,None");
+        await _csvImporter.ReadAsync(stream);
+
+        //Assert
+        A.CallTo(() => _fakeCustomerRepo.CreateAsync(A<NewCustomerDto>.Ignored))
+            .MustHaveHappenedTwiceExactly();
+    }   //A<NewCustomerDto>.Ignored makes it so it doesn't care about input
 }
