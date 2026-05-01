@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "CustomerBatchImporter/1.0.0": {
+        "dependencies": {
+          "GenericParsing": "1.6.0"
+        },
+        "runtime": {
+          "CustomerBatchImporter.dll": {}
+        }
+      },
+      "GenericParsing/1.6.0": {
+        "runtime": {
+          "lib/net8.0/GenericParsing.dll": {
+            "assemblyVersion": "1.6.0.0",
+            "fileVersion": "1.6.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CustomerBatchImporter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GenericParsing/1.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aRqgnJj2UDlYSNXQkRAiBDZEn526tfyu6hGGNxS3Sa9dC5ssDTWc5rtoV5VUF2zVkl0011pcPwKwi2ly1g4LQw==",
+      "path": "genericparsing/1.6.0",
+      "hashPath": "genericparsing.1.6.0.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\bin\Debug\net10.0\CustomerBatchImporter.deps.json
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\bin\Debug\net10.0\CustomerBatchImporter.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\bin\Debug\net10.0\CustomerBatchImporter.pdb
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\CustomerBatchImporter.csproj.AssemblyReference.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\CustomerBatchImporter.GeneratedMSBuildEditorConfig.editorconfig
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\CustomerBatchImporter.AssemblyInfoInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\CustomerBatchImporter.AssemblyInfo.cs
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\CustomerBatchImporter.csproj.CoreCompileInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\CustomerBatchImporter.sourcelink.json
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\CustomerBatchImporter.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\refint\CustomerBatchImporter.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\CustomerBatchImporter.pdb
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\CustomerBatchImporter\CustomerBatchImporter\obj\Debug\net10.0\ref\CustomerBatchImporter.dll
