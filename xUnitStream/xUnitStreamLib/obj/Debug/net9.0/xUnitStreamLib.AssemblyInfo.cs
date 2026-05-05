@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("xUnitStreamLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+016f493dbf3ce052f55b5964f9b7f9bede129e01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8d624d9d70c7be0566e23fd9b7692c6035813a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("xUnitStreamLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("xUnitStreamLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
