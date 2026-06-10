@@ -1,0 +1,13 @@
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\XkcdComicFinder.csproj.AssemblyReference.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\XkcdComicFinder.GeneratedMSBuildEditorConfig.editorconfig
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\XkcdComicFinder.AssemblyInfoInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\XkcdComicFinder.AssemblyInfo.cs
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\XkcdComicFinder.csproj.CoreCompileInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\XkcdComicFinder.sourcelink.json
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\bin\Debug\net10.0\XkcdComicFinder.deps.json
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\bin\Debug\net10.0\XkcdComicFinder.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\bin\Debug\net10.0\XkcdComicFinder.pdb
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\XkcdComicFinder.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\refint\XkcdComicFinder.dll
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\XkcdComicFinder.pdb
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\XkcdComicFinder\obj\Debug\net10.0\ref\XkcdComicFinder.dll

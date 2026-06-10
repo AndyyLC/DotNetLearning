@@ -5,11 +5,15 @@ namespace XkcdComicFinder;
 
 public record Comic
 {
+    [Key]
     [JsonPropertyName("num")] //use JsonPropertyName when not pulling all properties
     public int Number { get; init; }
 
     [JsonPropertyName("safe_title")]
     public string? Title { get; init; }
+
+    [JsonPropertyName("alt")]
+    public string? Alt { get; init; }
 
     [JsonPropertyName("month")]
     public string? Month { get; init; }
