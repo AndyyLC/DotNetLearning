@@ -1,6 +1,6 @@
 namespace XkcdComicFinder;
 
-public interface IXcdClient
+public interface IXkcdClient
 {
     Task<Comic> GetLatestAsync();
     Task<Comic?> GetNumberAsync(int number);

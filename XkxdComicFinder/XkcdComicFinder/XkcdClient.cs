@@ -1,7 +1,7 @@
 using System.Text.Json;
 namespace XkcdComicFinder;
 
-public class XkcdClient : IXcdClient
+public class XkcdClient : IXkcdClient
 {
     public const string PageUrl = "info.0.Json"; //every URL ends with info.0.json
     private readonly HttpClient _httpClient;
@@ -22,7 +22,7 @@ public class XkcdClient : IXcdClient
             var stream = await _httpClient.GetStreamAsync(path);
             return JsonSerializer.Deserialize<Comic>(stream);
         }
-        catch (AggregateException e) when (e.InnerException is HttpRequestException) //exceptions when no caller existsdd
+        catch (AggregateException e) when (e.InnerException is HttpRequestException) //exceptions when no caller exists
         {
             return null;
         }
