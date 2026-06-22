@@ -14,7 +14,7 @@ public class XkcdClient : IXkcdClient
         return JsonSerializer.Deserialize<Comic>(stream)!;
     }
 
-    public async Task<Comic?> GetNumberAsync(int number)
+    public async Task<Comic?> GetByNumberAsync(int number)
     {
         try
         {

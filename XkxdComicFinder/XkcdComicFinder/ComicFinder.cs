@@ -1,6 +1,6 @@
 namespace XkcdComicFinder;
 
-public class XkcdComicFinder
+public class ComicFinder //can make multiple HTTP calls during search but each call had a different url
 {
     private readonly IXkcdClient _xkcdClient;
     private readonly IComicRepository _repo;
@@ -22,7 +22,7 @@ public class XkcdComicFinder
         return _repo.Find(searchText);
     }
 
-    private async Task FetchAsync(Comic latestComic, int latestInRepo)
+    private async Task FetchAsync(Comic latestComic, int latestInRepo) //Modify to be parallel later
     {
         await _repo.AddComicAsync(latestComic); //add latest  to repo
         int current = latestComic.Number - 1;

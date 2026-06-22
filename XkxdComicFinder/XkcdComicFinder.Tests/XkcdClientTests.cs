@@ -65,7 +65,7 @@ public class XkcdClientTests
     public async Task NoComicFound()
     {
         SetResponse(HttpStatusCode.NotFound);
-        var comic = await xkcdClient.GetNumberAsync(1);
+        var comic = await xkcdClient.GetByNumberAsync(1);
         Assert.Null(comic);
     }
 
@@ -73,7 +73,7 @@ public class XkcdClientTests
     public async Task GetByNumber()
     {
         SetResponse(HttpStatusCode.OK, LatestJson);
-        var comic = await xkcdClient.GetNumberAsync(2630);
+        var comic = await xkcdClient.GetByNumberAsync(2630);
         Assert.NotNull(comic);
         Assert.Equal(2630, comic.Number);
     }
