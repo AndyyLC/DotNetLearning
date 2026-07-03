@@ -1,7 +1,9 @@
 using FakeItEasy;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
 using System.Net;
+using System.Net.Mime;
 using System.Text.Json;
 
 namespace XkcdComicFinder.Tests;
@@ -27,13 +29,40 @@ public class ComicFinderTests: IDisposable
         var xkcdClient = new XkcdClient(httpClient); //httpClient needed to creat xkcdClient
 
         _comicFinder = new ComicFinder(xkcdClient, comicRepo);
-
     }
-    
 
-public void Dispose()
+    public void Dispose()
     {
         _keepAliveConn.Close();
         _comicDbContext.Dispose();
     }
+
+     private static Uri GetUri(Comic c) => new(string.Format(NumberLink, c.Number)); //creates URL from Comic
+
+     internal static void SetResponseComics(HttpMessageHandler fakeMsgHandler, params Comic[] comics) 
+    {
+        //uses LING helper to convert to dictionary
+        var responses = comics.ToDictionary(GetUri, c => JsonSerializer.Serialize(comics[0]));
+
+        A.CallTo(fakeMsgHandler).WithReturnType<Task<HttpResponseMessage>>().Where(c => c.Method.Name == "Send Async")
+        .Returns(new HttpResponseMessage()
+        {
+            StatusCode = HttpStatusCode.NotFound, //default is 404 not found
+        });
+
+        foreach (var responsePair in responses)
+        {
+            A.CallTo(fakeMsgHandler).WithReturnType<Task<HttpResponseMessage>>().Where(c => c.Method.Name == "Send Async")
+            .WhenArgumentsMatch(args => //get arguments list
+            args.First() is HttpRequestMessage req //request is first arguments
+            && req.RequestUri == responsePair.Key)
+            .Returns(new HttpResponseMessage() 
+            {
+                StatusCode = HttpStatusCode.OK,
+                Content = new StringContent(responsePair.Value), //returns comic
+            });
+        }
+    }
+
+
 }

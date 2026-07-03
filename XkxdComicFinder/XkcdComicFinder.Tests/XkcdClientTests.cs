@@ -53,6 +53,8 @@ public class XkcdClientTests
                 Content = new StringContent(content),
             });
     }
+
+   
     
     [Fact]
     public async Task GetLatest()
