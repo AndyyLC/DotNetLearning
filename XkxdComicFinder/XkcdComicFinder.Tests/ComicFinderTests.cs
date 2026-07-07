@@ -20,7 +20,7 @@ public class ComicFinderTests: IDisposable
     public ComicFinderTests()
     {
         (_comicDbContext, _keepAliveConn) = ComicRepositoryTests.SetupSqlite("comic_int"); 
-        //create a different database since xUnit Tests run in parallel and tests accessing the same in-memory database is bad
+        //create a different database since xUnit Tests run in parallel and tests accessing the same in-memory database is unsafe
         
         var comicRepo = new ComicRepository(_comicDbContext);
 
@@ -42,9 +42,12 @@ public class ComicFinderTests: IDisposable
      internal static void SetResponseComics(HttpMessageHandler fakeMsgHandler, params Comic[] comics) 
     {
         //uses LING helper to convert to dictionary
-        var responses = comics.ToDictionary(GetUri, c => JsonSerializer.Serialize(comics[0]));
+        var responses = comics.ToDictionary(GetUri, c => JsonSerializer.Serialize(c));
+        responses.Add(new Uri(LatestLink), 
+        JsonSerializer.Serialize(comics[0])); //assumes first in stack is the latest due to FakeItEasy applying fakes in a stack
+        //likely added so we can test a response for calling the latest comic
 
-        A.CallTo(fakeMsgHandler).WithReturnType<Task<HttpResponseMessage>>().Where(c => c.Method.Name == "Send Async")
+        A.CallTo(fakeMsgHandler).WithReturnType<Task<HttpResponseMessage>>().Where(c => c.Method.Name == "SendAsync")
         .Returns(new HttpResponseMessage()
         {
             StatusCode = HttpStatusCode.NotFound, //default is 404 not found
@@ -52,9 +55,10 @@ public class ComicFinderTests: IDisposable
 
         foreach (var responsePair in responses)
         {
-            A.CallTo(fakeMsgHandler).WithReturnType<Task<HttpResponseMessage>>().Where(c => c.Method.Name == "Send Async")
+            A.CallTo(fakeMsgHandler).WithReturnType<Task<HttpResponseMessage>>().Where(c => c.Method.Name == "SendAsync")
             .WhenArgumentsMatch(args => //get arguments list
-            args.First() is HttpRequestMessage req //request is first arguments
+            args.First() is HttpRequestMessage req 
+            //checks if first arguement is a HttpRequestMessage and then creates a variable called req if there is with the values of args.First
             && req.RequestUri == responsePair.Key)
             .Returns(new HttpResponseMessage() 
             {
@@ -64,5 +68,19 @@ public class ComicFinderTests: IDisposable
         }
     }
 
+    [Fact]
+    public async Task StartWithEmptyRepo()
+    {
+        SetResponseComics(_fakeMsgHandler, 
+            new Comic() { Number = 12, Title = "b"},
+            new Comic() { Number = 1, Title = "a"},
+            new Comic() { Number = 4, Title = "c"});
+
+        var foundComics = (await _comicFinder.FindAsync("b")) //returns IAsyncEnumerable
+        .ToBlockingEnumerable(); //converts to regualr IEnumerable
+
+        Assert.Single(foundComics);
+        Assert.Single(foundComics, c => c.Number == 12);
+    }
 
 }

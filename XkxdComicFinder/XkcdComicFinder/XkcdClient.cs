@@ -3,7 +3,7 @@ namespace XkcdComicFinder;
 
 public class XkcdClient : IXkcdClient
 {
-    public const string PageUrl = "info.0.Json"; //every URL ends with info.0.json
+    public const string PageUrl = "info.0.json"; //every URL ends with info.0.json
     private readonly HttpClient _httpClient;
 
     public XkcdClient(HttpClient httpClient) => _httpClient = httpClient; //Caller passes Https Clients
