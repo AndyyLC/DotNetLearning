@@ -1,0 +1,8 @@
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\ComicFinderService\obj\Debug\net10.0\ComicFinderService.csproj.AssemblyReference.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\ComicFinderService\obj\Debug\net10.0\rpswa.dswa.cache.json
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\ComicFinderService\obj\Debug\net10.0\ComicFinderService.GeneratedMSBuildEditorConfig.editorconfig
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\ComicFinderService\obj\Debug\net10.0\ComicFinderService.AssemblyInfoInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\ComicFinderService\obj\Debug\net10.0\ComicFinderService.AssemblyInfo.cs
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\ComicFinderService\obj\Debug\net10.0\ComicFinderService.csproj.CoreCompileInputs.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\ComicFinderService\obj\Debug\net10.0\ComicFinderService.MvcApplicationPartsAssemblyInfo.cache
+Z:\VSCODE\DotNet_BookLearning\DotNetLearning\XkxdComicFinder\ComicFinderService\obj\Debug\net10.0\ComicFinderService.sourcelink.json
