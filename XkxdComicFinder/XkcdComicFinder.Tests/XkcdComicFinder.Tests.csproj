@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\XkcdComicFinder\XkcdComicFinder.csproj" />
+    <ProjectReference Include="..\ComicFinderService\ComicFinderService.csproj" />
   </ItemGroup>
 
 </Project>

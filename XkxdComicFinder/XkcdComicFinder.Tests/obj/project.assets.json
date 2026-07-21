@@ -1417,6 +1417,23 @@
           "build/net8.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "ComicFinderService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite": "10.0.7",
+          "XkcdComicFinder": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ComicFinderService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ComicFinderService.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "XkcdComicFinder/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -3260,6 +3277,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "ComicFinderService/1.0.0": {
+      "type": "project",
+      "path": "../ComicFinderService/ComicFinderService.csproj",
+      "msbuildProject": "../ComicFinderService/ComicFinderService.csproj"
+    },
     "XkcdComicFinder/1.0.0": {
       "type": "project",
       "path": "../XkcdComicFinder/XkcdComicFinder.csproj",
@@ -3268,6 +3290,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "ComicFinderService >= 1.0.0",
       "FakeItEasy >= 9.0.1",
       "Microsoft.AspNetCore.Mvc.Testing >= 10.0.9",
       "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.7",
@@ -3312,6 +3335,9 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
+            "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\XkxdComicFinder\\ComicFinderService\\ComicFinderService.csproj": {
+              "projectPath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\XkxdComicFinder\\ComicFinderService\\ComicFinderService.csproj"
+            },
             "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\XkxdComicFinder\\XkcdComicFinder\\XkcdComicFinder.csproj": {
               "projectPath": "Z:\\VSCODE\\DotNet_BookLearning\\DotNetLearning\\XkxdComicFinder\\XkcdComicFinder\\XkcdComicFinder.csproj"
             }
