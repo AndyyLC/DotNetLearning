@@ -1,3 +1,5 @@
+using System.Collections.Concurrent;
+
 namespace XkcdComicFinder;
 
 public class ComicFinder //can make multiple HTTP calls during search but each call had a different url
@@ -22,18 +24,43 @@ public class ComicFinder //can make multiple HTTP calls during search but each c
         return _repo.Find(searchText);
     }
 
-    private async Task FetchAsync(Comic latestComic, int latestInRepo) //Modify to be parallel later
+    private async Task FetchAsync(Comic latestComic, int latestInRepo) 
     {
-        await _repo.AddComicAsync(latestComic); //add latest  to repo
-        int current = latestComic.Number - 1;
-        while (current > latestInRepo)
-        {
-            var comic = await _xkcdClient.GetByNumberAsync(current);
-            if (comic != null) //if comic exists, adds to repo
+        // parallel version
+        await _repo.AddComicAsync(latestComic); //add latest to repo
+        var numsToFetch = Enumerable.Range(latestInRepo + 1, latestComic.Number - 1 - latestInRepo);
+
+        var fetchedComics = new ConcurrentBag<Comic>();
+
+        await Parallel.ForEachAsync(
+            numsToFetch,
+            new ParallelOptions { MaxDegreeOfParallelism = 4 },
+            async (number, ct) =>
             {
-                await _repo.AddComicAsync(comic);
+                var comic = await _xkcdClient.GetByNumberAsync(number);
+                if (comic != null)
+                {
+                    fetchedComics.Add(comic);
+                }
             }
-            current--;
+        );
+
+        foreach (var comic in fetchedComics)
+        {
+            await _repo.AddComicAsync(comic);
         }
+
+        // Non-parallel version
+        // await _repo.AddComicAsync(latestComic); //add latest to repo
+        // int current = latestComic.Number - 1;
+        // while (current > latestInRepo)
+        // {
+        //     var comic = await _xkcdClient.GetByNumberAsync(current);
+        //     if (comic != null) //if comic exists, adds to repo
+        //     {
+        //         await _repo.AddComicAsync(comic);
+        //     }
+        //     current--;
+        // }
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XkcdComicFinder.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa571725ba99398905ef94f104e06c23bbefa817")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8817936ff84c5424ca110da8432973c2acb02ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("XkcdComicFinder.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XkcdComicFinder.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

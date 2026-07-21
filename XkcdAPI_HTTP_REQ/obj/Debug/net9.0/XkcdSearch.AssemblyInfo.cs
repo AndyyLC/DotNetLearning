@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XkcdSearch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef7b8005bcf67c13c1f56f8f46243051330f0293")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8817936ff84c5424ca110da8432973c2acb02ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("XkcdSearch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XkcdSearch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

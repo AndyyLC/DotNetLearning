@@ -18,7 +18,7 @@ public class XkcdClient : IXkcdClient
     {
         try
         {
-            var path = $"{number}.{PageUrl}";
+            var path = $"{number}/{PageUrl}";
             var stream = await _httpClient.GetStreamAsync(path);
             return JsonSerializer.Deserialize<Comic>(stream);
         }
